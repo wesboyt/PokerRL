@@ -2,15 +2,19 @@
 CFR_RNAD_PSRO multiway gto
 
 Example run:
+
 ========== RUNTIME PROFILING REPORT (Update 11500) ==========
+
 Worker: Mixed-opponent CFR Rollouts      | 500.7983        | 76       | 6589.4515      
 Trainer: Waiting for Queue               | 139.9143        | 50       | 2798.2851      
 Worker: Generate Prefixes                | 30.1885         | 77       | 392.0578       
 Worker: Batched Representative Rollout   | 16.5189         | 76       | 217.3546       
 Trainer: Forward & Backward R-NaD v6.4   | 5.1932          | 50       | 103.8631       
 Trainer: Optimizer Step                  | 1.9117          | 50       | 38.2345        
-Worker: Compute Pivot Priors             | 1.7804          | 77       | 23.1216        
+Worker: Compute Pivot Priors             | 1.7804          | 77       | 23.1216    
+
 ========================================================================
+
 
 Update 11500 | Loss: +0.6328 (Pol: +0.5707, Ent: -0.0130, Size: +0.0036, Gram: +0.0051) | RefFwd: +0.0123 | Reg-KL: 0.0020(it0) | EMA-KL: 0.0020 | Ref-KL: 0.1627 | Unif-KL: 0.8065 | PF-KL: 0.00143 | |Adv|: 4.464 | MinP: 0.0426 | Clip: 26.2% | rEps: 0.193 | SG: IDLE(0) street=-
 Per-street diagnostics (incl. KL):
@@ -34,7 +38,9 @@ Saving R-NaD v6.4 checkpoint at 11500...
 
 --- PREFLOP (pos 5) hole=Qs6d board= ---
 Action     | pi (behavior)  | Q (bb)     | valid 
+
 --------------------------------------------------
+
 fold       | 0.9983         | +0.000     | Y     
 check      | 0.0000         | +0.000     | .     
 call       | 0.0013         | +2.336     | Y     
@@ -43,7 +49,9 @@ allin      | 0.0000         | +0.000     | .
 
 --- FLOP (pos 2) hole=JcKc board=5c7h3d ---
 Action     | pi (behavior)  | Q (bb)     | valid 
+
 --------------------------------------------------
+
 fold       | 0.0000         | +0.000     | .     
 check      | 0.7879         | -2.012     | Y     
 call       | 0.0000         | +0.000     | .     
@@ -52,7 +60,9 @@ allin      | 0.0000         | +0.000     | .
 
 --- TURN (pos 1) hole=2h8s board=6hAh5s6c ---
 Action     | pi (behavior)  | Q (bb)     | valid 
+
 --------------------------------------------------
+
 fold       | 0.0000         | +0.000     | .     
 check      | 0.5312         | -2.456     | Y     
 call       | 0.0000         | +0.000     | .     
@@ -61,10 +71,13 @@ allin      | 0.0000         | +0.000     | .
 
 --- RIVER (pos 2) hole=JcKc board=5c7h3dJh9h ---
 Action     | pi (behavior)  | Q (bb)     | valid 
+
 --------------------------------------------------
+
 fold       | 0.0000         | +0.000     | .     
 check      | 0.2451         | +6.631     | Y     
 call       | 0.0000         | +0.000     | .     
 raise      | 0.7549         | +3.070     | Y     
 allin      | 0.0000         | +0.000     | .     
+
 ============================================================
